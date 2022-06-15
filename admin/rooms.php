@@ -47,7 +47,7 @@
                         ?>
                     </p>
                     <a href="book_room.php?rn=<?php echo $row['room_no']. "&rt=a" ?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
-                    <a href="book_room.php" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
+                    <a href="cancle_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                         ?>
                     </p>
                     <a href="book_room.php?rn=<?php echo $row['room_no']. "&rt=b" ?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
-                    <a href="book_room.php" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
+                    <a href="cancle_room.php?rn=<?php echo $row['room_no']. "&rt=b"?>" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@
                         ?>
                     </p>
                     <a href="book_room.php?rn=<?php echo $row['room_no']. "&rt=c "?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
-                    <a href="book_room.php" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
+                    <a href="cancle_room.php?rn=<?php echo $row['room_no']. "&rt=c"?>" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                         ?>
                     </p>
                     <a href="book_room.php?rn=<?php echo $row['room_no']. "&rt=d" ?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
-                    <a href="book_room.php" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
+                    <a href="cancle_room.php?rn=<?php echo $row['room_no']. "&rt=d"?>" class="btn btn-danger <?php if($row["status"]==1) {echo "active";} else{echo "disabled";} ?>">Cancle Booking </a>
                 </div>
             </div>
         </div>

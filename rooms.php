@@ -40,7 +40,7 @@
                             }
                         ?>
                     </p>
-                    <a href="admin/book_room.php" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
+                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
 
                     
                 </div>
@@ -78,7 +78,7 @@
                             }
                         ?>
                     </p>
-                    <a href="admin/book_room.php" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
+                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                             }
                         ?>
                     </p>
-                    <a href="admin/book_room.php" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
+                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@
                             }
                         ?>
                     </p>
-                    <a href="admin/book_room.php" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
+                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
                 </div>
             </div>
         </div>
