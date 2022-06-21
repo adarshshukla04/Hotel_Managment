@@ -4,6 +4,6 @@
 <body>
     <br><br><br><br>
     <center><h3>Room Booked Successfully :)</h3></center>
-    <p><a href = "rooms.php">Click here to go to previous page </a></p>
+    <p><a href = "../index.html">Click here to go to previous page </a></p>
 </body>
 </html>
