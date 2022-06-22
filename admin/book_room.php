@@ -38,7 +38,11 @@
             in_date='$_POST[check_in]', out_date='$_POST[check_out]', status = 1
             where room_no = '$_POST[room_no]'";
         }
-        $query_run = $conn->query($sql);
+        #$query_run = $conn->query($sql);
+        if($conn->query($sql))
+        {
+            echo "Room Booked....";
+        }
         header("location:redirect_page.php");
     }
 ?>

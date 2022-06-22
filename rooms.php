@@ -1,21 +1,3 @@
-<?php
-    session_start();
-    $conn = mysqli_connect("localhost", "root", "", "hotel_management");
-    $sql = "Select count(id) from single_non_ac where status = 1";
-    $query_run = $conn->query($sql);
-    $row = mysqli_fetch_assoc($query_run);
-    if ($row)
-    {
-        $sql_1 = "update single_non_ac set holder_name=NULL,
-        holder_email=NULL, holder_address=NULL, holder_mobile=0,
-        holder_aadhar=0, child=NULL, adult=NULL, in_date=NULL, out_date=NULL,
-        status=0 where out_date= Convert (Date, SYSDATETIME())";
-    }
-
-
-?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -96,7 +78,7 @@
                             }
                         ?>
                     </p>
-                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
+                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=b"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
                 </div>
             </div>
         </div>
@@ -132,7 +114,7 @@
                             }
                         ?>
                     </p>
-                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
+                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=c"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
                 </div>
             </div>
         </div>
@@ -168,7 +150,7 @@
                             }
                         ?>
                     </p>
-                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=a"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
+                    <a href="admin/book_room.php?rn=<?php echo $row['room_no']. "&rt=d"?>" class="btn btn-primary <?php if($row["status"]==0) {echo "active";} else{echo "disabled";} ?>">Book </a>
                 </div>
             </div>
         </div>
